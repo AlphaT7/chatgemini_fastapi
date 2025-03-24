@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat Gemini</title>
+    <link rel="shortcut icon" href="../static/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/fonts/font-awesome-4.3.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <script src="../static/js/main.js" type="module"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <h1>Chat Gemini</h1>
+      </header>
+
+      <section class="tab-wrap">
+        <!-- active tab on page load gets checked attribute -->
+        <input type="radio" id="tab1" name="tabGroup1" class="tab" checked />
+        <label for="tab1"
+          ><div id="micOnIndicator" class="fa fa-microphone"></div>
+          <div>Transcript</div></label
+        >
+
+        <input type="radio" id="tab2" name="tabGroup1" class="tab" />
+        <label for="tab2"><i class="fa fa-cogs"></i></label>
+
+        <div id="tabContent1" class="tab__content">
+          <div id="terminal" class="terminal"></div>
+        </div>
+
+        <div id="tabContent2" class="tab__content">
+          <div id="settingsPanel">
+            <div class="row">
+              <span>Toggle Speech</span>
+              <label class="toggle">
+                <input
+                  id="isSpeechOn"
+                  class="toggle-checkbox"
+                  type="checkbox"
+                  checked
+                />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div id="listening">Press the button and start talking! =)</div>
+      </section>
+
+      <footer>
+        <div class="about">Developed by Winters Webs</div>
+        <div id="button" class="button" data-type="listen">
+          <span><div id="buttonIcon" class="fa fa-microphone"></div></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
